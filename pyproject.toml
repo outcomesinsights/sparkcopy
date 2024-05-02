@@ -1,0 +1,35 @@
+[project]
+name = "sparkopy"
+version = "0.0.1"
+authors = [
+  { name="Ryan Duryea", email="aguynamedryan+oss@gmail.com" },
+]
+description = "Downloads tables from Spark and outputs them as Parquet files"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "click",
+  "protobuf",
+  "grpcio-status",
+  "grpcio",
+  "pandas",
+  "pyarrow",
+  "pyspark"
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
+
+[project.scripts]
+sparkopy = "sparkopy:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
