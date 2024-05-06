@@ -15,12 +15,12 @@ classifiers = [
 
 dependencies = [
   "click==8.1.7",
-  "grpcio==1.63.0",
-  "grpcio-status==1.63.0",
+  "databricks-connect==14.3.1",
+  "grpcio",
+  "grpcio-status",
   "pandas==2.2.2",
-  "protobuf==5.26.1",
-  "pyarrow==16.0.0",
-  "pyspark==3.5.1"
+  "protobuf",
+  "pyarrow==16.0.0"
 ]
 
 [project.urls]
